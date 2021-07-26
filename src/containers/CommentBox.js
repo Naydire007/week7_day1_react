@@ -1,4 +1,9 @@
-import react, { useState } from 'react';
+import React, { useState }from 'react';
+import CommentList from '../components/CommentList';
+import {Link} from 'react-router-dom';
+import React, {Component} from 'react';
+
+
 
 const CommentBox = () => {
     const [comments,setComments] = useState (
@@ -30,7 +35,14 @@ const CommentBox = () => {
           ])
 
           return (
-              <CommentList comments = {comments}/>
+                <div>
+                <h1>Movie Releases</h1>
+                <CommentList comments = {comments}/>
+                <Link to='https://www.imdb.com/calendar/?region=gb'>
+                <button type="button" className="btn btn-info">More Movies</button>
+                </Link>
+                </div>
+
           )
 }
 
