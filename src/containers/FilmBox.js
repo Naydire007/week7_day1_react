@@ -1,12 +1,11 @@
 import React, { useState }from 'react';
-import CommentList from '../components/CommentList';
-import {Link} from 'react-router-dom';
-import React, {Component} from 'react';
+import FilmList from '../components/FilmList';
 
 
 
-const CommentBox = () => {
-    const [comments,setComments] = useState (
+
+const FilmBox = () => {
+    const [films,setFilms] = useState (
         [
             {
               id: 1,
@@ -35,15 +34,33 @@ const CommentBox = () => {
           ])
 
           return (
-                <div>
+            <div className = 'film-box'>
                 <h1>Movie Releases</h1>
-                <CommentList comments = {comments}/>
-                <Link to='https://www.imdb.com/calendar/?region=gb'>
-                <button type="button" className="btn btn-info">More Movies</button>
-                </Link>
-                </div>
+                <FilmList films = {films}/>
+                <hr></hr>
+                <a id= 'button' href='https://www.imdb.com/calendar/?region=gb'>More Movies</a>
+               
+            </div>
 
           )
-}
+        }  
 
-export default CommentBox;
+        
+
+          
+
+export default FilmBox;
+
+
+// onClick(){
+//     window.location.href="http://url.com";
+// }
+// render(){
+//     return (
+//         <button id="bt" onClick={this.onClick}>Click</button>
+//     )
+// }
+// }
+// <Link to='https://www.imdb.com/calendar/?region=gb'>
+// <button type="button" className="btn btn-info">More Movies</button>
+// </Link>

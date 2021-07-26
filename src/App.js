@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import CommentBox from './containers/CommentBox';
+import FilmBox from './containers/FilmBox';
 
 function App() {
   return (
 
-    <CommentBox/>
+    <FilmBox/>
   
   );
 }
