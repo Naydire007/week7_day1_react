@@ -99,5 +99,8 @@ a{
   height: 4em;
   margin: 1em;
   border-radius: 15px;
+  text-align: center;
+  margin: auto;
+  position: relative;
 }
 
