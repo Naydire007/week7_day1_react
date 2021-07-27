@@ -9,36 +9,37 @@ const FilmBox = () => {
         [
             {
               id: 1,
-              name: "Spider-Man: Into the Spider-Verse",
-              url: "https://www.imdb.com/title/tt4633694/?ref_=rlm"
+              name: "Gekijouban Jujutsu Kaisen 0",
+              url: "https://www.imdb.com/title/tt14331144/?ref_=fn_al_tt_1"
             },
             {
               id: 2,
-              name: "Life Itself",
-              url: "https://www.imdb.com/title/tt5989218/?ref_=rlm"
+              name: "Boku no Hero Academia the Movie 3: World Heroes’ Mission",
+              url: "https://www.imdb.com/title/tt13544716/?ref_=fn_al_tt_1"
             },
             {
               id: 3,
-              name: "Mary Queen of Scots",
-              url: "https://www.imdb.com/title/tt2328900/?ref_=rlm"
+              name: "Evangelion 3.0 + 1.0 Thrice Upon A Time",
+              url: "https://www.imdb.com/title/tt2458948/?ref_=nv_sr_srsg_0"
             },
             {
               id: 4,
-              name: "The Lego Movie 2: The Second Part", url: "https://www.imdb.com/title/tt3513498/?ref_=rlm"
+              name: "Yuri!!! on Ice The Movie: Ice Adolescence", 
+              url: "https://www.imdb.com/title/tt8646060/?ref_=nv_sr_srsg_3"
             },
             {
               id: 5,
-              name: "Captain Marvel",
-              url: "https://www.imdb.com/title/tt4154664/?ref_=rlm"
+              name: "Sword Art Online Progressive Hoshi naki yoru no Aria",
+              url: "https://www.imdb.com/title/tt13424422/?ref_=nv_sr_srsg_0"
             }
           ])
 
           return (
             <div className = 'film-box'>
-                <h1>Movie Releases</h1>
+                <h1>Anime Releases</h1>
                 <FilmList films = {films}/>
                 <hr></hr>
-                <a id= 'button' href='https://www.imdb.com/calendar/?region=gb'>More Movies</a>
+                <a id= 'button' href='https://myanimelist.net/topanime.php?type=movie'>More Movies</a>
                
             </div>
 
